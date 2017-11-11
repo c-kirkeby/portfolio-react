@@ -32,7 +32,7 @@ export default class TopNav extends React.Component {
           <NavbarBrand>Christian Kirkeby</NavbarBrand>
           <NavbarToggler onClick={this.toggle}></NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>
+            <Nav navbar className="ml-sm-auto">
               <NavItem>
                 <NavLink active href="#about-me">About Me</NavLink>
               </NavItem>

@@ -5,10 +5,11 @@ html {
 html body {
   height: 100%;
   font-family: "Roboto", sans-serif;
-  background-color: rgba(0, 0, 0, 0.05);
+  /* background-color: rgba(0, 0, 0, 0.05); */
   padding-top: 60px;
 }
 
 html body .TopNav {
   background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.05);
 }

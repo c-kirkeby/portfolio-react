@@ -11,6 +11,7 @@
 
 # vagrant
 /.vagrant
+*-cloudimg-console.log
 
 # misc
 .DS_Store
