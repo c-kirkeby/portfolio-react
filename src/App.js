@@ -1,50 +1,56 @@
-import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
-// import aboutMeImage from './images/about-me.png';
-import './App.css';
+import React from 'react';
+import TopNav from './components/TopNav';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <MyNav />
+      <div className="container">
+        <TopNav />
+        <p></p>
+      </div>
     );
   }
 }
 
-class MyNav extends Component {
-  constructor(props) {
-    super(props);
+// class TopNav extends React.Component {
+//   constructor(props) {
+//     super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
+//     this.toggle = this.toggle.bind(this);
+//     this.state = {
+//       isOpen: false
+//     };
+//   }
 
-  render() {
-    return (
-      <div>
-        <Navbar color="">
-          <NavbarHeader>
-            <a class="navbar-brand">Christian Kirkeby</a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapse-nav">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            </NavbarHeader>
-            <div class="navbar-collapse collapse" id="collapse-nav">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#about-me">About Me</a></li>
-                <li><a href="#link-portfolio">Portfolio</a></li>
-                <li><a href="#link-contact-me">Contact Me</a></li>
-              </ul>
-            </div>
-        </Navbar>
-      </div>
-    )
-  }
-}
+//   toggle() {
+//     this.setState({
+//       isOpen: !this.state.isOpen
+//     });
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <Navbar color="black" light expand="md">
+//           <NavbarBrand>Christian Kirkeby</NavbarBrand>
+//           <NavbarToggler onClick={this.toggle}></NavbarToggler>
+//           <Collapse isOpen={this.state.isOpen} navbar>
+//             <Nav navbar>
+//               <NavItem>
+//                 <NavLink active href="/about-me">About Me</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="/portfolio">Portfolio</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="/contact-me">Contact Me</NavLink>
+//               </NavItem>
+//             </Nav>
+//           </Collapse>
+//         </Navbar>
+//       </div>
+//     )
+//   }
+// }
 
 export default App;
