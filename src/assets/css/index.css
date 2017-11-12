@@ -34,7 +34,7 @@ button.navbar-toggler:focus {
 
 .HalfBackground {
   background-color: #3D5AFE;
-  height: 380px;
+  height: 450px;
   background-size: cover;
   width: 100%;
   z-index: 1;
@@ -42,7 +42,7 @@ button.navbar-toggler:focus {
 
 .main {
   position: relative;
-  margin: -80px auto 0px;
+  margin: -150px auto 0px;
   z-index: 2;
 }
 
@@ -70,3 +70,7 @@ button.navbar-toggler:focus {
   margin: -125px auto 0;
   padding: 7.5px;
 }
+
+/* .PortfolioItem {
+  min-width: 100%;
+} */

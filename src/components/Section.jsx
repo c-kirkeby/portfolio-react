@@ -1,8 +1,4 @@
 import React from 'react';
-import {
-  Row,
-  Col
-} from 'reactstrap';
 
 export default class Section extends React.Component {
   render() {
@@ -10,13 +6,9 @@ export default class Section extends React.Component {
 
     return (
       <div className={SectionClass}>
-        <Row>
-          <Col>
-            <h2 className="text-center">{this.props.heading}</h2>
-            <hr />
-            <div>{this.props.children}</div>
-          </Col>
-        </Row>
+        <h2 className="text-center">{this.props.heading}</h2>
+        <hr />
+        <div>{this.props.children}</div>
       </div>
     )
   }
