@@ -73,7 +73,6 @@ class App extends React.Component {
                 <Row>
                   {portfolios.map(portfolio =>
                     <Col xl="6" lg="6" md="6" xs="12">
-                      {console.log(portfolio.image)}
                       <PortfolioItem
                         heading={portfolio.heading}
                         image={require(`./assets/images/${portfolio.image}`)}

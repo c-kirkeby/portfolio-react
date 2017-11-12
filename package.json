@@ -17,6 +17,8 @@
   "devDependencies": {
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.1.1",
     "reactstrap": "^5.0.0-alpha.3"
   }
 }
