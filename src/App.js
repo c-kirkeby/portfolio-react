@@ -16,7 +16,7 @@ class App extends React.Component {
         {
           heading: "Weather API App",
           image: "weather.png",
-          link: "portfolio/weather/"
+          link: "/portfolio/weather/index.html"
         },
         {
           heading: "Wikipedia API App",
@@ -25,13 +25,13 @@ class App extends React.Component {
         },
         {
           heading: "Twitch API App",
-          image: "twitch.jpg",
+          image: "twitch.png",
           link: "portfolio/twitch/"
         },
         {
-          heading: "Test",
-          image: "wikipedia.png",
-          link: "portfolio/twitch/"
+          heading: "Random Quote Generator",
+          image: "random-quote.png",
+          link: "portfolio/random-quote/"
         }
       ]
     };
@@ -72,7 +72,7 @@ class App extends React.Component {
               <Section heading="Portfolio">
                 <Row>
                   {portfolios.map(portfolio =>
-                    <Col xl="4" lg="4" md="6" xs="12">
+                    <Col xl="6" lg="6" md="6" xs="12">
                       {console.log(portfolio.image)}
                       <PortfolioItem
                         heading={portfolio.heading}
@@ -102,7 +102,7 @@ class App extends React.Component {
           <Container>
             <Row>
               <Col xs="12">
-                <span className="text-muted">Created by <a id="created-by" href="_blank">Christian Kirkeby</a></span>
+                <span className="text-muted">Created by <a id="created-by" href="_blank">Christian Kirkeby</a> using ReactJS & Bootstrap 4</span>
               </Col>
             </Row>
           </Container>

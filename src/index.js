@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/css/fonts.css';
 import './assets/css/index.css';
+// import 'font-awesome';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
