@@ -29,7 +29,7 @@ export default class TopNav extends React.Component {
     return (
       <div>
         <Navbar className="TopNav" light fixed="top" expand="md">
-          <NavbarBrand>Christian Kirkeby</NavbarBrand>
+          <NavbarBrand><b>CHRISTIAN</b> KIRKEBY</NavbarBrand>
           <NavbarToggler onClick={this.toggle}></NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-sm-auto">
