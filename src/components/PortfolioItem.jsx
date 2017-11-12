@@ -10,8 +10,8 @@ export default class PortfolioItem extends React.Component {
           <img src={this.props.image} 
                alt={this.props.heading + ' image'}
                height="150px" 
-               width="260px"></img>
-               className="img-fluid"
+               width="260px"
+               className="img-fluid"></img>    
         </a>
       </div>
     );
