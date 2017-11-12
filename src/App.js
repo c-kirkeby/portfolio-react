@@ -27,6 +27,11 @@ class App extends React.Component {
           heading: "Twitch API App",
           image: "twitch.jpg",
           link: "portfolio/twitch/"
+        },
+        {
+          heading: "Test",
+          image: "wikipedia.png",
+          link: "portfolio/twitch/"
         }
       ]
     };
@@ -79,13 +84,29 @@ class App extends React.Component {
                 </Row>
               </Section>
             </div>
-            <div className="card">
+            {/* <div className="card">
               <Section heading="Contact Me">
-
+                <Row>
+                  <Col>
+                  test
+                  </Col>
+                  <Col>
+                  test
+                  </Col>
+                </Row>
               </Section>
-            </div>
+            </div> */}
           </div>
-        </Container>
+        </Container> 
+        <footer>
+          <Container>
+            <Row>
+              <Col xs="12">
+                <span className="text-muted">Created by <a id="created-by" href="_blank">Christian Kirkeby</a></span>
+              </Col>
+            </Row>
+          </Container>
+        </footer>
       </div>
     );
   }
