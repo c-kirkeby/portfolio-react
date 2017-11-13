@@ -6,6 +6,7 @@ import TopNav from './components/TopNav';
 import Section from './components/Section';
 import Profile from './components/Profile';
 import Portfolio from './components/Portfolio';
+import BottomNav from './components/BottomNav';
 
 class App extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class App extends React.Component {
         <Container>
           <TopNav />
         </Container>
-        <HalfBackground />
+        <div className="Banner" id="TopBanner"></div>
         <Container>
           <div className="main">
             <div className="card">
@@ -40,22 +41,10 @@ class App extends React.Component {
             <Portfolio />
           </div>
         </Container> 
-        <footer>
-          <Container>
-            <Row>
-              <Col xs="12">
-                <span className="text-muted">Created by <a id="created-by" href="_blank">Christian Kirkeby</a> using ReactJS & Bootstrap 4</span>
-              </Col>
-            </Row>
-          </Container>
-        </footer>
+        <BottomNav />
       </div>
     );
   }
 }
-
-const HalfBackground = () => (
-  <div className="HalfBackground"></div>
-);
 
 export default App;

@@ -8,7 +8,6 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import { HashLink } from 'react-router-hash-link';
 
 export default class TopNav extends React.Component {
   constructor(props) {
@@ -35,14 +34,11 @@ export default class TopNav extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-sm-auto">
               <NavItem>
-                <NavLink href="#">About Me</NavLink>
+                <NavLink href="#TopBanner">About Me</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#Portfolio">Portfolio</NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink href="#ContactMe">Contact Me</NavLink>
-              </NavItem> */}
             </Nav>
           </Collapse>
         </Navbar>

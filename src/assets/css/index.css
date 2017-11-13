@@ -5,14 +5,26 @@ html {
 html body {
   height: 100%;
   font-family: "Roboto", sans-serif;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #00000008;
   padding-top: 60px;
+}
+
+.TopNav > .navbar-brand {
+  font-size: 16px;
+  padding: 0 0px;
+  height: 60px;
+  line-height: 60px;
 }
 
 .TopNav {
   background-color: #fff;
   border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-  min-height: 80px;
+  min-height: 60px;
+  transition: all 0.4s ease;
+}
+
+.TopNav.shrink {
+  min-height: 60px;
 }
 
 .navbar-toggler {
@@ -24,12 +36,12 @@ html body {
   outline: none;
 }
 
-.HalfBackground {
-  /* background-color: #3D5AFE; */
-  background-color: #0c6980;
+.Banner {
+  background: url('../images/cover.jpg') no-repeat;
+  background-position: 50% 25%;
   height: 450px;
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -45,7 +57,6 @@ html body {
 
 .card {
   border-top: 10px solid #00a8a8;
-  /* border-bottom: 4px solid rgba(0, 0, 0, 0.15); */
   margin-top: 15px;
   margin-bottom: 15px;
   padding-left: 15px;
@@ -72,14 +83,21 @@ html body {
   margin-left: auto;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .TopNav > .navbar-brand {
-    font-size: 16px;
-    padding: 0 0px;
-  }
+.created-by {
+    font-size: 0.75rem
+}
+
+footer {
+  background-color: #fff;
+  /* line-height: 80px; */
+  height: 80px;
 }
 
 @media (min-width: 768px) {
+  html body {
+    padding-top: 80px;
+  }
+
   .TopNav > .navbar-brand {
     font-family: "Raleway", sans-serif;
     font-size: 24px;
@@ -87,13 +105,8 @@ html body {
     height: 80px;
     line-height: 80px;
   }
-}
 
-footer {
-  background-color: #fff;
-  line-height: 80px;
-}
-
-a#created-by {
-  color: #00a8a8;
+  .created-by {
+    font-size: 1em;
+  }
 }
