@@ -83,14 +83,13 @@ html body {
   margin-left: auto;
 }
 
-.created-by {
-    font-size: 0.75rem
+.created-by > a {
+  color: #00a8a8;
 }
 
-footer {
+.BottomNav {
   background-color: #fff;
-  /* line-height: 80px; */
-  height: 80px;
+  line-height: 80px; /*FIX: Broken on smaller screens*/
 }
 
 @media (min-width: 768px) {
