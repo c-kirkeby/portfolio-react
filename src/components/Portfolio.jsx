@@ -37,13 +37,14 @@ export default class Portfolio extends React.Component {
 
   render() {
     const { portfolios } = this.state;
+    const colSize = portfolios.length % 3 === 0 ? 4 : 6;
     
     return (
       <div className="card">
         <Section heading="Portfolio">
           <Row>
             {portfolios.map(portfolio =>
-              <Col xl="6" lg="6" md="6" xs="12">
+              <Col xl={colSize} lg={colSize} md={colSize} xs="12">
                 <PortfolioItem
                   heading={portfolio.heading}
                   image={require(`./../assets/images/${portfolio.image}`)}
