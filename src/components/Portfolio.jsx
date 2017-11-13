@@ -43,6 +43,11 @@ export default class Portfolio extends React.Component {
       <div className="card">
         <Section heading="Portfolio">
           <Row>
+            <Col>
+              <p className="lead">Below are some of the projects I've created.</p>
+            </Col>
+          </Row>
+          <Row>
             {portfolios.map(portfolio =>
               <Col xl={colSize} lg={colSize} md={colSize} xs="12">
                 <PortfolioItem
