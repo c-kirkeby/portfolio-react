@@ -9,8 +9,8 @@ export default class PortfolioItem extends React.Component {
         <a href={this.props.link} target="_blank">
           <img src={this.props.image} 
                alt={this.props.heading + ' image'}
-               height="150px" 
-               width="260px"
+               height="144px" 
+               width="256px"
                className="img-fluid"></img>    
         </a>
       </div>

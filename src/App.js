@@ -5,40 +5,40 @@ import {
 import TopNav from './components/TopNav';
 import Section from './components/Section';
 import Profile from './components/Profile';
-import PortfolioItem from './components/PortfolioItem';
+import Portfolio from './components/Portfolio';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      portfolios: [
-        {
-          heading: "Weather API App",
-          image: "weather.png",
-          link: "/portfolio/weather/index.html"
-        },
-        {
-          heading: "Wikipedia API App",
-          image: "wikipedia.png",
-          link: "portfolio/wikipedia/"
-        },
-        {
-          heading: "Twitch API App",
-          image: "twitch.png",
-          link: "portfolio/twitch/"
-        },
-        {
-          heading: "Random Quote Generator",
-          image: "random-quote.png",
-          link: "portfolio/random-quote/"
-        }
-      ]
-    };
+    // this.state = {
+    //   portfolios: [
+    //     {
+    //       heading: "Weather API App",
+    //       image: "weather.png",
+    //       link: "/portfolio/weather/index.html"
+    //     },
+    //     {
+    //       heading: "Wikipedia API App",
+    //       image: "wikipedia.png",
+    //       link: "portfolio/wikipedia/"
+    //     },
+    //     {
+    //       heading: "Twitch API App",
+    //       image: "twitch.png",
+    //       link: "portfolio/twitch/"
+    //     },
+    //     {
+    //       heading: "Random Quote Generator",
+    //       image: "random-quote.png",
+    //       link: "portfolio/random-quote/"
+    //     }
+    //   ]
+    // };
   }
 
   render() {
-    const {portfolios} = this.state;
+    // const {portfolios} = this.state;
 
     return (
       <div>
@@ -68,7 +68,8 @@ class App extends React.Component {
                 </Col>
               </Row>
             </div>
-            <div className="card">
+            <Portfolio />
+            {/* <div className="card">
               <Section heading="Portfolio">
                 <Row>
                   {portfolios.map(portfolio =>
@@ -82,7 +83,7 @@ class App extends React.Component {
                   )}
                 </Row>
               </Section>
-            </div>
+            </div> */}
             {/* <div className="card">
               <Section heading="Contact Me">
                 <Row>
