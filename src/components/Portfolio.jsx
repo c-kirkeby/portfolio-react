@@ -9,22 +9,22 @@ const Portfolio = () => {
   const portfolios = [
     {
       heading: "Weather API App",
-      image: "weather.png",
+      image: "http://res.cloudinary.com/christiank/image/upload/v1510628495/weather_tnjbtb.jpg",
       link: "/portfolio/weather/index.html"
     },
     {
       heading: "Wikipedia API App",
-      image: "wikipedia.png",
+      image: "http://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628504/wikipedia_kazlxp.jpg",
       link: "/portfolio/wikipedia-reader/index.html"
     },
     {
       heading: "Twitch API App",
-      image: "twitch.png",
+      image: "http://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628502/twitch_vw4esx.jpg",
       link: "/portfolio/twitch/index.html"
     },
     {
       heading: "Random Quote Generator",
-      image: "random-quote.png",
+      image: "http://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628240/random-quote_tisqmi.jpg",
       link: "/portfolio/random-quote-generator/index.html"
     }
   ]
@@ -43,7 +43,7 @@ const Portfolio = () => {
             <Col xl={colSize} lg={colSize} md={colSize} xs="12">
               <PortfolioItem
                 heading={portfolio.heading}
-                image={require(`./../assets/images/${portfolio.image}`)}
+                image={portfolio.image}
                 link={portfolio.link}
               />
             </Col>
