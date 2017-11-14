@@ -23,6 +23,10 @@ html body {
   transition: all 0.4s ease;
 }
 
+.nav-link:hover {
+  color: #00a8a8;
+}
+
 .TopNav.shrink {
   min-height: 60px;
 }
@@ -81,6 +85,17 @@ html body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.PortfolioItemIcon {
+  font-size: 24px;
+  margin: 2px;
+  color: #00a8a8;
+}
+
+.PortfolioItemIcon:hover {
+  text-decoration: none;
+  color: #008080;
 }
 
 .created-by > a {

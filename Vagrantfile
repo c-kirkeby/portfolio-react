@@ -15,6 +15,10 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.network :forwarded_port, guest: 3000, host: 8080
+  config.vm.provider "virtualbox" do |v|
+    v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+  end 
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
