@@ -9,7 +9,7 @@ const Portfolio = () => {
   const portfolios = [
     {
       heading: "Weather API App",
-      image: "http://res.cloudinary.com/christiank/image/upload/v1510628495/weather_tnjbtb.jpg",
+      image: "https://res.cloudinary.com/christiank/image/upload/v1510628495/weather_tnjbtb.jpg",
       link: "/portfolio/weather/index.html",
       technologies: [
         {
@@ -32,7 +32,7 @@ const Portfolio = () => {
     },
     {
       heading: "Wikipedia API App",
-      image: "http://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628504/wikipedia_kazlxp.jpg",
+      image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628504/wikipedia_kazlxp.jpg",
       link: "/portfolio/wikipedia-reader/index.html",
       technologies: [
         {
@@ -55,7 +55,7 @@ const Portfolio = () => {
     },
     {
       heading: "Twitch API App",
-      image: "http://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628502/twitch_vw4esx.jpg",
+      image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628502/twitch_vw4esx.jpg",
       link: "/portfolio/twitch/index.html",
       technologies: [
         {
@@ -78,7 +78,7 @@ const Portfolio = () => {
     },
     {
       heading: "Random Quote Generator",
-      image: "http://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628240/random-quote_tisqmi.jpg",
+      image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628240/random-quote_tisqmi.jpg",
       link: "/portfolio/random-quote-generator/index.html",
       technologies: [
         {
