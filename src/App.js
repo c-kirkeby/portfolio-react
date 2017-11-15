@@ -20,7 +20,7 @@ class App extends React.Component {
           <div className="main">
             <div className="card">
               <Profile 
-                image='http://res.cloudinary.com/christiank/image/upload/c_scale,h_402,w_400/v1510639844/profile_acrbng.jpg'
+                image='https://res.cloudinary.com/christiank/image/upload/c_scale,h_402,w_400/v1510639844/profile_acrbng.jpg'
                 width="200px"
                 height="200px"
               />
