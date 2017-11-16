@@ -41,7 +41,7 @@ html body {
 }
 
 .Banner {
-  background: url('http://res.cloudinary.com/christiank/image/upload/v1510628508/cover_cropped_450px_hn9fny.jpg') no-repeat;
+  background: url('https://res.cloudinary.com/christiank/image/upload/v1510628508/cover_cropped_450px_hn9fny.jpg') no-repeat;
   background-position: 50% 25%;
   height: 300px;
   background-size: cover;
