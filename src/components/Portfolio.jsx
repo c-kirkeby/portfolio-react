@@ -10,7 +10,7 @@ const Portfolio = () => {
     {
       heading: "Weather API App",
       image: "https://res.cloudinary.com/christiank/image/upload/v1510628495/weather_tnjbtb.jpg",
-      link: "/portfolio/weather/index.html",
+      link: "/portfolio/weather/",
       technologies: [
         {
           name: "html5",
@@ -33,7 +33,7 @@ const Portfolio = () => {
     {
       heading: "Wikipedia API App",
       image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628504/wikipedia_kazlxp.jpg",
-      link: "/portfolio/wikipedia-reader/index.html",
+      link: "/portfolio/wikipedia-reader/",
       technologies: [
         {
           name: "html5",
@@ -56,7 +56,7 @@ const Portfolio = () => {
     {
       heading: "Twitch API App",
       image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628502/twitch_vw4esx.jpg",
-      link: "/portfolio/twitch/index.html",
+      link: "/portfolio/twitch/",
       technologies: [
         {
           name: "html5",
@@ -79,7 +79,7 @@ const Portfolio = () => {
     {
       heading: "Random Quote Generator",
       image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628240/random-quote_tisqmi.jpg",
-      link: "/portfolio/random-quote-generator/index.html",
+      link: "/portfolio/random-quote-generator/",
       technologies: [
         {
           name: "html5",
