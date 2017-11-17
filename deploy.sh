@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Deploying..."
+
 npm run build
-cp -r ./build/* ./../public_html
+rm -r ../public_html/*
+cp -r build/* ../public_html/*
+
+echo "Deployed!
