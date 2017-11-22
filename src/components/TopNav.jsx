@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Collapse,
+  Container,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -15,7 +16,15 @@ export default class TopNav extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      // links: [
+      //   {
+      //     active: true
+      //   },
+      //   {
+      //     active: false
+      //   }
+      // ]
     };
   }
 
@@ -25,24 +34,33 @@ export default class TopNav extends React.Component {
     });
   }
 
+  // handleClick() {
+  //   this.preventDefault(e);
+  //   this.setState({
+  //     this.state.links.map((link) => {
+
+  //     });
+  //   });
+  // }
+
   render() {
     return (
-      <div>
+      <Container>
         <Navbar className="TopNav" light fixed="top" expand="md">
           <NavbarBrand><b>CHRISTIAN</b> KIRKEBY</NavbarBrand>
           <NavbarToggler onClick={this.toggle}></NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-sm-auto">
               <NavItem>
-                <NavLink href="#TopBanner">About Me</NavLink>
+                <NavLink href="#TopBanner" active={true}>About Me</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#Portfolio">Portfolio</NavLink>
+                <NavLink href="#Portfolio" active={false}>Portfolio</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </Container>
     )
   }
 }
