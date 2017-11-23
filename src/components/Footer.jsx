@@ -3,9 +3,9 @@ import {
   Container, Row, Col
 } from 'reactstrap';
 
-const BottomNav = () => {
+const Footer = () => {
   return (
-    <footer className="BottomNav">
+    <footer className="Footer">
       <Container>
         <Row>
           <Col xs="12" md="12" className="text-center">
@@ -18,4 +18,4 @@ const BottomNav = () => {
   )
 }
 
-export default BottomNav;
+export default Footer;

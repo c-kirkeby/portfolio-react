@@ -9,14 +9,14 @@ html body {
   padding-top: 60px;
 }
 
-.TopNav > .navbar-brand {
+.Header > .navbar-brand {
   font-size: 20px;
   padding: 0 0px;
   height: 60px;
   line-height: 60px;
 }
 
-.TopNav {
+.Header {
   background-color: #fff;
   border-bottom: 4px solid rgba(0, 0, 0, 0.15);
   min-height: 60px;
@@ -27,7 +27,7 @@ html body {
   color: #00a8a8;
 }
 
-.TopNav.shrink {
+.Header.shrink {
   min-height: 60px;
 }
 
@@ -40,7 +40,7 @@ html body {
   outline: none;
 }
 
-.Banner {
+#Banner {
   background: url('https://res.cloudinary.com/christiank/image/upload/v1510628508/cover_cropped_450px_hn9fny.jpg') no-repeat;
   background-position: 50% 25%;
   height: 300px;
@@ -102,7 +102,7 @@ html body {
   color: #00a8a8;
 }
 
-.BottomNav {
+.Footer {
   background-color: #fff;
   line-height: 60px; /*FIX: Broken on smaller screens*/
 }
@@ -112,7 +112,7 @@ html body {
     padding-top: 60px;
   }
 
-  .TopNav > .navbar-brand {
+  .Header > .navbar-brand {
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     padding: 0 15px;
@@ -120,7 +120,7 @@ html body {
     line-height: 80px; */
   }
 
-  .Banner {
+  #Banner {
     height: 450px;
   }
 
