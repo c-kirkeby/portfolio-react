@@ -18,7 +18,7 @@ export default class Header extends React.Component {
     this.toggleActive = this.toggleActive.bind(this);
     this.state = {
       isOpen: false,
-      activeLink: 1
+      activeLink: 0
     };
   }
 
@@ -45,10 +45,10 @@ export default class Header extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav navbar className="ml-sm-auto">
                 <NavItem>
-                <NavLink href="#Banner" onClick={() => {this.toggleActive(1)}} active={this.state.activeLink === 1 ? true : false}>About Me</NavLink>
+                <NavLink href="#Banner" onClick={() => {this.toggleActive(0)}} active={this.state.activeLink === 0 ? true : false}>About Me</NavLink>
                 </NavItem>
                 <NavItem>
-                <NavLink href="#Portfolio" onClick={() => {this.toggleActive(2) }} active={this.state.activeLink === 2 ? true : false}>Portfolio</NavLink>
+                <NavLink href="#Portfolio" onClick={() => {this.toggleActive(1) }} active={this.state.activeLink === 1 ? true : false}>Portfolio</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

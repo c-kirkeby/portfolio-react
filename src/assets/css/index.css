@@ -104,7 +104,7 @@ html body {
 
 .Footer {
   background-color: #fff;
-  line-height: 60px; /*FIX: Broken on smaller screens*/
+  height: 60px;
 }
 
 @media (min-width: 768px) {
