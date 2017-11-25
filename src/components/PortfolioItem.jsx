@@ -26,7 +26,7 @@ const PortfolioItem  = ({heading, link, image, technologies}) => {
   return (
     <div className="PortfolioItem">
       <h4>{heading}</h4>
-      <a href={link} target="_blank">
+      <a href={link}>
         <img src={image} 
               alt={heading + ' image'}
               height="144px" 
