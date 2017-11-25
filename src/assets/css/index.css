@@ -100,6 +100,11 @@ html body {
 
 .created-by > a {
   color: #00a8a8;
+  text-decoration: none;
+}
+
+i.fa {
+  font-size: 18px;
 }
 
 .Footer {
@@ -116,8 +121,6 @@ html body {
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     padding: 0 15px;
-    /* height: 80px;
-    line-height: 80px; */
   }
 
   #Banner {
