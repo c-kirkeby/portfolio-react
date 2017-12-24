@@ -16,9 +16,7 @@ const AboutMe = () => {
       <Row>
         <Col>
           <Section heading="About Me">
-            <h4>
-              Web Developer / Test Analyst
-                    </h4>
+            <h4>Web Developer / Test Analyst</h4>
             <p>HTML5, CSS3, Javascript, and React</p>
             <p>I have a great interest in web development,
                       especially some of the newer technologies like
