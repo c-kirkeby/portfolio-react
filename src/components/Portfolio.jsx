@@ -4,102 +4,9 @@ import {
 } from 'reactstrap';
 import Section from './Section';
 import PortfolioItem from './PortfolioItem';
+import portfolios from './../assets/data/portfolios'
 
 const Portfolio = () => {
-  const portfolios = [
-    {
-      heading: "Weather API App",
-      image: "https://res.cloudinary.com/christiank/image/upload/v1510628495/weather_tnjbtb.jpg",
-      link: "/portfolio/weather/",
-      technologies: [
-        {
-          name: "html5",
-          link: "https://www.w3.org/TR/html5/"
-        },
-        {
-          name: "bootstrap",
-          link: "https://getbootstrap.com/"
-        },
-        {
-          name: "jquery",
-          link: "https://jquery.com/"
-        },
-        {
-          name: "sass",
-          link: "http://sass-lang.com/"
-        }
-      ]
-    },
-    {
-      heading: "Wikipedia API App",
-      image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628504/wikipedia_kazlxp.jpg",
-      link: "/portfolio/wikipedia-reader/",
-      technologies: [
-        {
-          name: "html5",
-          link: "https://www.w3.org/TR/html5/"
-        },
-        {
-          name: "bootstrap",
-          link: "https://getbootstrap.com/"
-        },
-        {
-          name: "jquery",
-          link: "https://jquery.com/"
-        },
-        {
-          name: "sass",
-          link: "http://sass-lang.com/"
-        }
-      ]
-    },
-    {
-      heading: "Twitch API App",
-      image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628502/twitch_vw4esx.jpg",
-      link: "/portfolio/twitch/",
-      technologies: [
-        {
-          name: "html5",
-          link: "https://www.w3.org/TR/html5/"
-        },
-        {
-          name: "bootstrap",
-          link: "https://getbootstrap.com/"
-        },
-        {
-          name: "jquery",
-          link: "https://jquery.com/"
-        },
-        {
-          name: "sass",
-          link: "http://sass-lang.com/"
-        }
-      ]
-    },
-    {
-      heading: "Random Quote Generator",
-      image: "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628240/random-quote_tisqmi.jpg",
-      link: "/portfolio/random-quote-generator/",
-      technologies: [
-        {
-          name: "html5",
-          link: "https://www.w3.org/TR/html5/"
-        },
-        {
-          name: "bootstrap",
-          link: "https://getbootstrap.com/"
-        },
-        {
-          name: "jquery",
-          link: "https://jquery.com/"
-        },
-        {
-          name: "sass",
-          link: "http://sass-lang.com/"
-        }
-      ]
-    }
-  ]
   const colSize = portfolios.length % 3 === 0 ? 4 : 6;
     
   return (
@@ -112,14 +19,13 @@ const Portfolio = () => {
         </Row>
         <Row>
           {portfolios.map(portfolio =>
-            <Col xl={colSize} lg={colSize} md={colSize} xs="12">
               <PortfolioItem
                 heading={portfolio.heading}
                 image={portfolio.image}
                 link={portfolio.link}
                 technologies={portfolio.technologies}
+                colSize={colSize}
               />
-            </Col>
           )}
         </Row>
       </Section>

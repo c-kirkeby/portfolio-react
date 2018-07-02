@@ -3,47 +3,37 @@ import {
   Col, Row
 } from 'reactstrap';
 
-// const technologyTypes = [
-//   {
-//     name: "html5",
-//     link: "https://www.w3.org/TR/html5/"
-//   },
-//   {
-//     name: "bootstrap",
-//     icon: "https://getbootstrap.com/"
-//   },
-//   {
-//     name: "jquery",
-//     link: "https://jquery.com/"
-//   },
-//   {
-//     name: "sass",
-//     icon: "http://sass-lang.com/"
-//   }
-// ]
-
-const PortfolioItem  = ({heading, link, image, technologies}) => {
+const PortfolioItem  = props => {
+  const {
+    heading, 
+    link, 
+    image, 
+    technologies, 
+    colSize
+  } = props
   return (
-    <div className="PortfolioItem">
-      <h4>{heading}</h4>
-      <a href={link}>
-        <img src={image} 
-              alt={heading + ' image'}
-              height="144px" 
-              width="256px"
-              className="img-fluid"></img>    
-      </a>
-      <Row>
-        <Col>
-          {technologies.map(technology => 
-            <a href={technology.link} className="PortfolioItemIcon" alt="">
-              <i alt="{technology.name}" className={`devicon-${technology.name}-plain`}></i>
-            </a>
-          )}
-        </Col>
-      </Row>
-    </div>
-  );
+    <Col xl={colSize} lg={colSize} md={colSize} xs="12">
+      <div className="PortfolioItem" {...props}>
+        <h4>{heading}</h4>
+        <a href={link}>
+          <img src={image} 
+                alt={heading + ' image'}
+                height="144px" 
+                width="256px"
+                className="img-fluid"></img> 
+        </a>
+        <Row>
+          <Col>
+            {technologies.map(technology => 
+              <a href={technology.link} className="PortfolioItemIcon" alt="">
+                <i alt={`${technology.name}`} className={`devicon-${technology.name}-plain`}></i>
+              </a>
+            )}
+          </Col>
+        </Row>
+      </div>
+    </Col>
+  )
 }
 
-export default PortfolioItem;
+export default PortfolioItem
