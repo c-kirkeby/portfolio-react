@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import Logo from './Logo'
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -40,7 +41,9 @@ export default class Header extends React.Component {
     return (
       <Container>
           <Navbar className="Header" light fixed="top" expand="md">
-            <NavbarBrand><b>CHRISTIAN</b> KIRKEBY</NavbarBrand>
+            <NavbarBrand className="d-flex align-items-center">
+              <Logo /><span><b>Christian</b> Kirkeby</span>
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggleMenu}></NavbarToggler>
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav navbar className="ml-sm-auto">
