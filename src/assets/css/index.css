@@ -12,8 +12,10 @@ html body {
 .Header > .navbar-brand {
   font-size: 20px;
   padding: 0 0px;
-  height: 40px;
-  line-height: 40px;
+}
+
+.navbar-brand > .Logo {
+  margin-right: 4px;
 }
 
 .Header {

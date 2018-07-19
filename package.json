@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "create-react-app": "^1.5.2",
     "devicons": "^1.8.0",
+    "global": "^4.3.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-loadable": "^5.4.0",
