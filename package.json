@@ -7,8 +7,9 @@
     "devicons": "^1.8.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-lazyload": "^2.3.0",
     "react-loadable": "^5.4.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +23,6 @@
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.1.1",
     "reactstrap": "^5.0.0-alpha.3"
-  }
+  },
+  "peerDependencies": {}
 }
