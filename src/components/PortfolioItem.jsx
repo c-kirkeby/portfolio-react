@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Col, Row
 } from 'reactstrap';
+import LazyLoad from 'react-lazyload'
 
 const PortfolioItem  = props => {
   const {
@@ -16,11 +17,16 @@ const PortfolioItem  = props => {
       <div className="PortfolioItem" {...props}>
         <h4>{heading}</h4>
         <a href={link}>
-          <img src={image} 
-                alt={heading + ' image'}
-                height="144px" 
-                width="256px"
-                className="img-fluid"></img> 
+          <LazyLoad height={144} width={256}>
+            <img 
+              src={image} 
+              alt={heading + ' image'}
+              height="144px" 
+              width="256px"
+              className="img-fluid"
+            >
+            </img>
+          </LazyLoad>
         </a>
         <Row>
           <Col>
