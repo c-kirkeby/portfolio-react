@@ -6,6 +6,7 @@
     "bootstrap": "^4.0.0-beta.2",
     "create-react-app": "^1.5.2",
     "devicons": "^1.8.0",
+    "express": "^4.16.3",
     "global": "^4.3.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -15,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -22,9 +24,11 @@
   "devDependencies": {
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
+    "nodemon": "^1.18.3",
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.1.1",
     "reactstrap": "^5.0.0-alpha.3"
   },
+  "proxy": "http://localhost:8080",
   "peerDependencies": {}
 }

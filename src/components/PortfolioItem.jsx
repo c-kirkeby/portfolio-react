@@ -17,7 +17,7 @@ const PortfolioItem  = props => {
       <div className="PortfolioItem" {...props}>
         <h4>{heading}</h4>
         <a href={link}>
-          <LazyLoad height={144} width={256}>
+          <LazyLoad height={144} width={230}>
             <img 
               src={image} 
               alt={heading + ' image'}

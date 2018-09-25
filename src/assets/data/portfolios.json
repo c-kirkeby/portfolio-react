@@ -70,24 +70,20 @@
     },
     {
       "heading": "Random Quote Generator",
-      "image": "https://res.cloudinary.com/christiank/image/upload/c_scale,w_1920/v1510628240/random-quote_tisqmi.jpg",
-      "link": "/portfolio/random-quote-generator/",
+      "image": "http://res.cloudinary.com/christiank/image/upload/c_scale,h_144/v1533426593/quote_ld7qvo.jpg",
+      "link": "/portfolio/quote/",
       "technologies": [
         {
           "name": "html5",
           "link": "https://www.w3.org/TR/html5/"
         },
         {
-          "name": "bootstrap",
-          "link": "https://getbootstrap.com/"
+          "name": "react",
+          "link": "https://reactjs.org/"
         },
         {
-          "name": "jquery",
-          "link": "https://jquery.com/"
-        },
-        {
-          "name": "sass",
-          "link": "http://sass-lang.com/"
+          "name": "css3",
+          "link": "https://www.w3.org/TR/CSS/"
         }
       ]
     }

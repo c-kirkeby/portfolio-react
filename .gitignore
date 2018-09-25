@@ -8,6 +8,7 @@
 
 # production
 /build
+/public/portfolio/
 
 # vagrant
 /.vagrant
