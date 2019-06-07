@@ -7044,9 +7044,9 @@ react-error-overlay@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.3.tgz#6eae9350144f3cd036e4f968c5a8bfae542af562"
 
-react-lazyload@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.3.0.tgz#ccb134223012447074a96543954f44b055dc6185"
+react-lazyload@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.6.1.tgz#666d4ca39a30589340dbaff98e9b205efe94ab30"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
