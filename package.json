@@ -24,7 +24,7 @@
   "devDependencies": {
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
-    "nodemon": "^1.18.4",
+    "nodemon": "^1.19.1",
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.1.1",
     "reactstrap": "^6.4.0"
