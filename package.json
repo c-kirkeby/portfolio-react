@@ -27,7 +27,7 @@
     "nodemon": "^1.18.4",
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.1.1",
-    "reactstrap": "^6.4.0"
+    "reactstrap": "^8.0.1"
   },
   "proxy": "http://localhost:8080",
   "peerDependencies": {}
