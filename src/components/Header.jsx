@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   Collapse,
   Container,
@@ -8,54 +8,79 @@ import {
   Nav,
   NavItem,
   NavLink
-} from 'reactstrap';
+} from 'reactstrap'
 import Logo from './Logo'
 
 export default class Header extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.toggleMenu = this.toggleMenu.bind(this);
-    this.toggleActive = this.toggleActive.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this)
+    this.toggleActive = this.toggleActive.bind(this)
     this.state = {
       isOpen: false,
       activeLink: 0
-    };
+    }
   }
 
   toggleMenu() {
     this.setState({
       isOpen: !this.state.isOpen
-    });
+    })
   }
 
   toggleActive(link) {
     if (this.state.activeLink !== link) {
       this.setState({
         activeLink: link
-      });
+      })
     }
   }
 
   render() {
     return (
       <Container>
-          <Navbar className="Header" light fixed="top" expand="md">
-            <NavbarBrand className="d-flex align-items-center">
-              <Logo /><span><b>Christian</b> Kirkeby</span>
-            </NavbarBrand>
-            <NavbarToggler onClick={this.toggleMenu}></NavbarToggler>
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav navbar className="ml-sm-auto">
-                <NavItem>
-                <NavLink href="#Banner" onClick={() => {this.toggleActive(0)}} active={this.state.activeLink === 0 ? true : false}>About Me</NavLink>
-                </NavItem>
-                <NavItem>
-                <NavLink href="#Portfolio" onClick={() => {this.toggleActive(1) }} active={this.state.activeLink === 1 ? true : false}>Portfolio</NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
+        <Navbar className="Header" light fixed="top" expand="md">
+          <NavbarBrand className="d-flex align-items-center">
+            <Logo
+              class="Logo"
+              width={40}
+              height={40}
+              primary="#7337FD"
+              secondary="#EEEEEE"
+            />
+            <span>
+              <b>Christian</b> Kirkeby
+            </span>
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggleMenu}></NavbarToggler>
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav navbar className="ml-sm-auto">
+              <NavItem>
+                <NavLink
+                  href="#Banner"
+                  onClick={() => {
+                    this.toggleActive(0)
+                  }}
+                  active={this.state.activeLink === 0 ? true : false}
+                >
+                  About Me
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="#Portfolio"
+                  onClick={() => {
+                    this.toggleActive(1)
+                  }}
+                  active={this.state.activeLink === 1 ? true : false}
+                >
+                  Portfolio
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </Container>
     )
   }
